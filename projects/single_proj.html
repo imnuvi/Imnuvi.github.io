@@ -1,0 +1,16 @@
+{% load static %}
+{% load projects_extras %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ project.project_title }}</title>
+  </head>
+  <body>
+
+    <script type="text/javascript" src={% static 'projects/libraries/p5.min.js' %}></script>
+    {% with "/projects/js/"|addstr:project.project_number|addstr:".js" as proloc%}
+    <script type="text/javascript" src={% static proloc %}></script>
+    {% endwith %}
+  </body>
+</html>

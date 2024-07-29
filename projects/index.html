@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/2f9f7e1032.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projects</title>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <nav id="nav">
+
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/projects/pdfs/ram_resume.pdf">Resume</a></li>
+          <li><a href="/art">Art</a></li>
+        </ul>
+
+      </nav>
+
+      <div class="content">
+
+        <div class="title">
+
+          <h1>My Projects</h1>
+
+        </div>
+
+        <div class="collections">
+          <p>I love creating cool stuff</p>
+          <p> Here's a selection of projects I have done. Most will be in javascript and will be user interactive in some way. Look around and you may find something you like</p>
+
+          <br>
+
+          <div class="projects">
+
+            {% for proj in project_list %}
+
+            <div class="single_project">
+
+              <div class="image">
+                {% with "projects/images/"|addstr:proj.project_number|addstr:".jpg" as image_static %}
+                  {% if proj.visual_proj %}
+                  <div class="the_image"><a href={% url 'single_project' proj.project_number %}><img src="{% static image_static %}"></a></div>
+                  {% else %}
+                  <div class="the_image"><a href={{ proj.project_link }}><img src="{% static image_static %}"></a></div>
+                  {% endif %}
+
+                {% endwith %}
+              </div>
+
+              <div class="description">
+
+              <h3>{{ proj.project_title }}</h3>
+              <p>{{ proj.project_description }}</p>
+              {% if proj.visual_proj %}
+              <a href={% url 'single_project' proj.project_number %} class="visit">visit</a>
+              {% else %}
+              <a href={{ proj.project_link }} class="visit">visit</a>
+              {% endif %}
+              <a href={{ proj.project_source_code }} calss="source">source code</a>
+
+              </div>
+            </div>
+
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+
+
+      <div id="footer">
+        <nav>
+          <ul>
+            <li><a href="https://github.com/thedoodler" > <i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.hackerrank.com/thedoodler" > <i class="fab fa-hackerrank"></i></a></li>
+            <li><a href="https://www.instagram.com/ram._.prakash/" > <i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ram-prakash1/" > <i class="fa fa-linkedin"></i></a></li>
+            <li><a href="mailto:ramprakshsmail@gmail.com" > <i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+  </body>
+</html>

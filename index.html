@@ -1,9 +1,8 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en" >
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="{% static 'homepage/css/mystyle.css' %}">
+    <link rel="stylesheet" href="homepage/css/mystyle.css">
     <script src="https://kit.fontawesome.com/2f9f7e1032.js" crossorigin="anonymous"></script>
     <title>Ram Prakash</title>
   </head>
@@ -17,10 +16,10 @@
 
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="{% url 'projects_view' %}">Projects</a></li>
-            <li><a href="{% url 'blog_view' %}">Blog</a></li>
-            <li><a href="{% static 'homepage/pdfs/ram_resume.pdf' %}">Resume</a></li>
-            <li><a href="{% url 'art_view' %}">Art</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="homepage/pdfs/ram_resume.pdf">Resume</a></li>
+            <li><a href="art">Art</a></li>
           </ul>
 
         </nav>
@@ -56,8 +55,8 @@
 
 
     </div>
-    <script src="{% static 'homepage/js/p5.min.js' %}"></script>
-		<script src="{% static 'homepage/js/experiment.js' %} "></script>
-		<script src="{% static 'homepage/js/tries.js' %}"></script>
+    <script src="homepage/js/p5.min.js"></script>
+		<script src="homepage/js/experiment.js"></script>
+		<script src="homepage/js/tries.js"></script>
   </body>
 </html>
