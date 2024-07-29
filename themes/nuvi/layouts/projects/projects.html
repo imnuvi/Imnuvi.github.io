@@ -1,25 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script src="https://kit.fontawesome.com/2f9f7e1032.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Projects</title>
-  </head>
+  {{ partial "head.html" . }}
   <body>
     <div class="wrapper">
 
-      <nav id="nav">
-
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/projects/pdfs/ram_resume.pdf">Resume</a></li>
-          <li><a href="/art">Art</a></li>
-        </ul>
-
-      </nav>
+      {{ partial "header.html" . }}
 
       <div class="content">
 

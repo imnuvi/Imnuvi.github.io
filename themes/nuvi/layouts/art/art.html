@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+  <!-- <head>
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/2f9f7e1032.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Art</title>
-  </head>
+  </head> -->
+  {{ partial "head.html" . }}
   <body>
     <div class="wrapper">
-      <nav id="nav">
+      <!-- <nav id="nav">
 
         <ul>
           <li><a href="/">Home</a></li>
@@ -18,7 +19,9 @@
           <li><a href="#">Art</a></li>
         </ul>
 
-      </nav>
+      </nav> -->
+
+      {{ partial "header.html" . }}
 
       <div class="content">
 
@@ -45,7 +48,7 @@
       </div>
 
 
-      <div id="footer">
+      <!-- <div id="footer">
         <nav>
           <ul>
             <li><a href="https://github.com/thedoodler" > <i class="fa fa-github"></i></a></li>
@@ -55,7 +58,8 @@
             <li><a href="mailto:ramprakshsmail@gmail.com" > <i class="fa fa-envelope"></i></a></li>
           </ul>
         </nav>
-      </div>
+      </div> -->
+      {{ partial "footer.html"}}
 
 
     </div>
