@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blender | on My New Hugo Site</title>
-    <link>http://localhost:1337/tags/blender-/</link>
+    <link>https://example.org/tags/blender-/</link>
     <description>Recent content in Blender | on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Dec 2020 12:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1337/tags/blender-/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/tags/blender-/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Select stuff the lazy way (in edit mode)</title>
-      <link>http://localhost:1337/blog/blog-2/</link>
+      <link>https://example.org/blog/blog-2/</link>
       <pubDate>Tue, 01 Dec 2020 12:00:00 -0700</pubDate>
-      <guid>http://localhost:1337/blog/blog-2/</guid>
+      <guid>https://example.org/blog/blog-2/</guid>
       <description>The most annoying thing i had to do in blender was selecting every single edge or corner by myself. Not a hard thing when wwhat you’re designing is small but when its got like 4 subdivision modifiers stuff becomes hard.&#xA;So, to select rows of edges or corners that are not even linked but are on the same line, use ctrl + alt + left click&#xA;To select alternates from anything you’ve got selected go to the select panel and click checker deselct</description>
     </item>
   </channel>
