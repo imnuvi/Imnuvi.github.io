@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   
 
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1337&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/2f9f7e1032.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -40,7 +40,465 @@
             
 <div class="single_post">
 
-  <h2 class="post_heading"><a href="/blog/blog-2/">Select stuff the lazy way (in edit mode)</a></h2>
+  <h2 class="post_heading"><a href="/blog/12_functional_programming_with_elixir/">Functional Programming with Elixir</a></h2>
+  <ul>
+    <li>15 Jul 2024</li>
+    
+      <li> 
+          Computer Science |
+         
+          Biology |
+         
+          Evolution
+        
+      </li>    
+  
+  </ul>
+  <p>During my time as a professional software developer, I have always been working with object oriented languages and all codebases I have interacted with have been written with the object oriented paradigm. So when I came across the functional programming paradigm, I got curious to learn more. Reading about Haskell and Clojure portrayed functional languages as hard to grasp and not very useful. But I found out about elixir and the syntax looked promising. So I set out to learning elixir and found it surprisingly practical. It had a lot of flexibility in terms of language syntax to enable some of the rules functional programming inherently follows. So here is a comprehensive overview of what elixir is all about and some tools and ideologies I learnt.</p>
+<p>Ideological shifts
+The functional programming language introduces a few ideological shifts.</p>
+<p>Immutable data types – In Functional languages, all data types are immutable. Once a value is created, It cannot be changed. This is best explained with maps</p>
+<p>sample_map = %{&ldquo;key1&rdquo; =&gt; &ldquo;val1&rdquo;, &ldquo;key2&rdquo; =&gt; &ldquo;val2&rdquo;}
+Now we have the map named sample map with key1 and key2. In a object oriented language, the dictionary will be mutable and we can directly change the key1 to a different value. But in elixir, we will have to update the key, and that will create a fresh dictionary with the updated value</p>
+<p>Map.put(sample_map, &ldquo;key1&rdquo;, &ldquo;update1&rdquo;)
+%{&ldquo;key1&rdquo; =&gt; &ldquo;update1&rdquo;, &ldquo;key2&rdquo; =&gt; &ldquo;val2&rdquo;}</p>
+<p>sample_map
+%{&ldquo;key1&rdquo; =&gt; &ldquo;val1&rdquo;, &ldquo;key2&rdquo; =&gt; &ldquo;val2&rdquo;}</p>
+<h1 id="this-is-assuming-iex-execution-more-on-later-sections">This is assuming iex execution. More on later sections</h1>
+<p>Here the original sample_map still retains its original value and the Map.put returned a fresh dictionary with its own memory location.
+Object oriented programming languages usually optimise for memory and can directly update values in memory without creating copies.
+With improvement in storage and memory of computers each year, we don’t have to worry about memory limitations affecting performance. Immutability enables developers to effectively debug and maintain functions without having to worry about for example a helper function updating a user object’s members.</p>
+<p>Anonymous Functions – These are functions that can be passed around as variables, without being defined.</p>
+<p>my_fun = fn x -&gt; x*3 end
+my_fun.(1)</p>
+<h1 id="3">3</h1>
+<p>my_fun.(5)</p>
+<h1 id="15">15</h1>
+<p>Here my_fun can be passed and will be treated as a variable but can also be called with the dot syntax.</p>
+<p>Pure Functions – Functions in a functional language are pure. A pure function always returns the same output value for a given input and doesn’t create any side effects. Side effects are basically changes to the program or environment outside the function’s scope.</p>
+<p>For example in python</p>
+<p>test_list = [0, 0, 0]</p>
+<h1 id="impure-function-in-python">impure function in python</h1>
+<p>def add_to_list(eg_list):
+eg_list.append(5)</p>
+<p>add_to_list(test_list)
+print(test_list)</p>
+<h1 id="prints-0-0-0-5">prints [0, 0, 0, 5]</h1>
+<p>add_to_list(test_list)
+print(test_list)</p>
+<h1 id="prints-0-0-0-5-5">prints [0, 0, 0, 5, 5]</h1>
+<p>add_to_list(test_list)
+print(test_list)</p>
+<h1 id="prints-0-0-0-5-5-5">prints [0, 0, 0, 5, 5, 5]</h1>
+<p>Here the same function with the same input returns different outputs each time its called. Hence this function is impure</p>
+<p>The same on elixir looks like this</p>
+<h1 id="pure-elixir-function">pure elixir function</h1>
+<h1 id="def-add_to_listtest_list-do">def add_to_list(test_list) do</h1>
+<h1 id="test_list--5">test_list ++ [5]</h1>
+<h1 id="end">end</h1>
+<h1 id="calling-this-function">calling this function</h1>
+<p>test_list = [0,0,0]
+add_to_list(test_list)</p>
+<h1 id="0-0-0-5">[0, 0, 0, 5]</h1>
+<p>add_to_list(test_list)</p>
+<h1 id="0-0-0-5-1">[0, 0, 0, 5]</h1>
+<p>add_to_list(test_list)</p>
+<h1 id="0-0-0-5-2">[0, 0, 0, 5]</h1>
+<p>Calling the same function n times will result in the same output.</p>
+<p>Classy functions – Functions are treated as values and can be passed around. For example a function can be used as an argument to another function. These can lead to higher order functions.</p>
+<p>For example, the Enum.map function which is used to map each element with a particular operation. This operation can be any other function. Here Enum.map is a higher order function as it takes in another function as its argument.</p>
+<p>my_list = [1, 2, 3, 4, 5]</p>
+<p>Enum.map(my_list, fn x -&gt; x**2 end)</p>
+<h1 id="1-4-9-16-25">[1, 4, 9, 16, 25]</h1>
+<p>Enum.map(my_list, fn x -&gt; x/2 end)</p>
+<h1 id="05-10-15-20-25">[0.5, 1.0, 1.5, 2.0, 2.5]</h1>
+<p>Here Enum.map takes in the anonymous function which raises an element to the power 2. Hence the Enum.map function is a higher order function. The action that Enum.map performs on the elements depends on the function passed in as the parameter.</p>
+<p>Recursion</p>
+<p>Recursion</p>
+<p>Recursion</p>
+<p>In Elixir, everything is handled with recursion. Not even just the functions, even the data types ideologically follow recursion. Some points that might seem weird but are very useful.</p>
+<p>A function can be defined multiple times with different signatures, based on the number of arguments, type of arguments
+Functions defined multiple times means it is easier to write end cases for recursion and the same function can be called multiple times. For example, a factorial function can be written as
+def fact(0) do
+1
+end</p>
+<p>def fact(n) do
+n * fact(n-1)
+end</p>
+<p>fact(5)
+#120
+And there we go. A factorial program without any if statements!</p>
+<p>There isn’t a dedicated for loop like in object oriented programs. In the sense, if you want to loop 100 times, what you essentially do is generate an iterable of length 100, and go through each of them performing an action on each of them. ( In my opinion this is such an interesting idea and this is how programming should be taught to new people )</p>
+<h1 id="this-runs-10-times-multiplying-iter-by-2">this runs 10 times multiplying iter by 2</h1>
+<p>for n &lt;- 1..10, do: n * 2</p>
+<h1 id="2-4-6-8-10-12-14-16-18-20">[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]</h1>
+<p>Every iterable data type is recursed around to access its values. In elixir, each list only contains two values. a head value and another list. Now the next list will contain its own head value and another list. to understand this take a look at this
+[ 1 | [ 2 | [ 3 | [ 4 | [ 5 | [ ] ] ] ] ] ]</p>
+<p>Here the description is like this [ head | tail_list ]. ( by the way, above representation is the valid way to describe a list. the normal method of [1,2,3,4,5] is just syntactic sugar )</p>
+<p>This means that in order to get all values of a list, you don’t loop through the elements, you recurse through the items.</p>
+<p>def double_each([]) do
+[]
+end</p>
+<p>def double_each([head | tail]) do
+[head * 2 | double_each(tail)]
+end</p>
+<p>my_list = [1, 2, 3, 4, 5]
+double_each(my_list)</p>
+<h1 id="2-4-6-8-10">[2, 4, 6, 8, 10]</h1>
+<p>Pattern Matching – Each assignment statement is not really an assignment statement. In most functional languages, it is an eqality. Think of a math equation, here the equals = sign merely states that the left hand side is equal to the right hand side. Functional programming languages take this idea and extend it.</p>
+<p>So each equals sign in elixir means that any values on the left are equal to the values on the right. This provides us the ability to match values. The important use of this is to define functions that can match certain criteria based on the arguments and to write guard classes.</p>
+<p>[a, b, c] = [1, 2, 3]</p>
+<p>a
+#1</p>
+<p>b
+#2</p>
+<p>c
+#3
+Here We have essentially equated the list on the left to the list on the right. And so, each variable a, b, and c gets pattern matched and the compiler knows that a, b and c should be that specific value.</p>
+<p>Whew, that was a lot of new info. But what all of these enable us to do, is our codebase is now very robust and way easier to debug. Functions can be considered as black boxes that work as they are supposed to. Elixir also supports parallel processing since each function can be set to run on different cores, without having to worry about passing in data and state of data within our memory. More than that, it is a fun way of looking at programming and teaches a lot of good practices, which can be incorporated into our development flow.</p>
+<p>I have been solving some usual programming problems with elixir for a while now and these are available here <a href="https://github.com/imnuvi/Algorithms">https://github.com/imnuvi/Algorithms</a></p>
+<p>Resources:
+Here are a couple of useful resources which helped me understand and learn Elixir</p>
+<p>Books on elixir – <a href="https://github.com/sger/ElixirBooks?tab=readme-ov-file">https://github.com/sger/ElixirBooks?tab=readme-ov-file</a>
+Elixir Succinctly book – <a href="https://www.syncfusion.com/succinctly-free-ebooks/elixir-succinctly">https://www.syncfusion.com/succinctly-free-ebooks/elixir-succinctly</a>
+Official elixir Hexdocs documentation of elixir packages – <a href="https://hexdocs.pm/elixir/1.12/Atom.html">https://hexdocs.pm/elixir/1.12/Atom.html</a>
+I will be publishing a part two of the functional programming series, where I will cover more ideological shifts and elixir quirks and part three where we will go through OTP ( Open Telecom Platform ) and parallel processing for distributed fault tolerant systems.</p>
+
+</div>
+          
+            
+<div class="single_post">
+
+  <h2 class="post_heading"><a href="/blog/11_the_blind_watchmaker/">The Blind Watchmaker</a></h2>
+  <ul>
+    <li>14 Dec 2023</li>
+    
+      <li> 
+          Computer Science |
+         
+          Biology |
+         
+          Evolution
+        
+      </li>    
+  
+  </ul>
+  <p>Genome Dynamics Visualization App:
+Description:
+During my Undergraduate years, I got introduced to the concept of The Blind Watchmaker by Richard Dawkins. The concept intrigued me a lot, and I got the chance to recreate and visualize the concept with the help of programming. The Program lets the user interact with a set of organisms and select the winning organism each generation, and the subsequent organisms will evolve the desired organ with superior functionality.</p>
+<p>Significance of the work:</p>
+<p>The application is an educational and interactive tool, offering users a visually engaging platform to comprehend the principles of evolution. The app contributes to scientific literacy by making natural selection and adaptation accessible to a broad audience. Whether used for educational purposes, scientific exploration, or as an entertaining means of learning, the app&rsquo;s ability to demonstrate evolutionary mechanisms in a user-friendly manner enhances conceptual understanding and promotes appreciation for the intricate processes shaping biological diversity.
+The Program uses fractals that are found everywhere in nature as the building organisms. Building the application provided invaluable experience in problem-solving, debugging, and building efficient systems.</p>
+<p>Concept:</p>
+<p>The concept posits that the intricate design observed in living organisms arises from incremental mutations over extended periods. Despite the unforeseeable nature of natural selection, complex and seemingly designed structures can emerge. This underscores how the appearance of design in nature can be explained through the purely mechanistic and unguided processes of evolution.</p>
+<p>Approach:</p>
+<p>Research: Research for this project involved a foundational exploration of the underlying principles and delivery mechanisms of the concept. Interviews with both students and professionals revealed a pervasive misunderstanding of, or misinformation about, the concept of evolution. To ensure broad accessibility, the project is designed for deployment on both web and Android platforms, targeting a diverse user base.</p>
+<p>Layout: The layout will feature a grid populated with diverse organisms, each composed of fractals with varied parameters. These parameters encompass the size of each fractal branch, the angle between branches, and the color of each branch. This implementation diverges from the original by incorporating fractals to more accurately depict real-life structures, where fractals are inherent in structures such as lungs, blood vessels, and the arrangement of leaves in plants.</p>
+<p>User flow:
+Initialization: The user begins with a random grid populated by fractal organisms, each possessing unique, randomly assigned starting parameters.
+Define Evolution Criteria and Selection: The user mentally defines a vague set of success criteria for evolution, such as a specific color and shape for the organisms. The user selects organisms from within the grid based on the defined evolution criteria.
+Selection and Offspring Generation: The chosen organism becomes the parent for the subsequent generation of offspring. With each click on a selected organism, a new generation of offspring is generated to replace the current grid. The offspring inherit parameters from the parent but undergo random mutations. The degree of mutation is determined by a mutation rate, introducing slight variations in parameters.
+Iterative Evolution: The process of selection, mutation, and generation of offspring is iteratively repeated for several generations.
+Convergence to Successful Evolution: Over successive generations, organisms that meet the defined success criteria evolve and persist, while those that do not gradually diminish. The grid transforms, retaining only organisms that have evolved into structures best suited for the given environment.
+Final Outcome: After a number of generations, the grid primarily consists of organisms that have successfully adapted to the defined criteria, representing the best structures capable of thriving in their environment.</p>
+<p>Technical execution
+Fractal generator: This basically generates the organism given a set of parameters. Makes use of Trigonometric functions to calculate the position of the next branch.
+Mutation logic: This defines how much the next generation varies in relation to the parent of the previous generation. Uses a handwritten randomness logic to mutate and defines how inheritance happens.</p>
+<p>The fractals are rendered by having a struct that defines each parameter and these define the various aspects of the fractals, which are calculated recursively at each branch after applying the mutation value.</p>
+<p>The Website: Website is written with JS canvas for easy accessibility and deployed here <a href="https://ramprakash.blog/projects/1/">https://ramprakash.blog/projects/1/</a>
+Mobile Application: The mobile application is written in Kotlin for android phones and can be downloaded here : <a href="https://play.google.com/store/apps/details?id=blog.ramprakash.mutation_map&amp;pcampaignid=web_share">https://play.google.com/store/apps/details?id=blog.ramprakash.mutation_map&amp;pcampaignid=web_share</a></p>
+<p>Results achieved:
+Helped users gain a Visual representation of the theory of evolution
+Got a deeper understanding of Evolution, how it can be better explained visually and other places where it can be used.</p>
+<p>Lessons learnt:
+Understanding a concept in depth makes it easier to apply it in different contexts.
+Understood more about Javascript and Kotlin languages for developing an interactive UI
+Creating a framework for the interfaces before starting to program makes it easier to ideate and code better software</p>
+<p>Links:
+Explanation video by me: <a href="https://youtu.be/Q3AoHzQ2dB4">https://youtu.be/Q3AoHzQ2dB4</a>
+The entire codebase: <a href="https://github.com/cosmoglint/the_blind_watchmaker">https://github.com/cosmoglint/the_blind_watchmaker</a>
+Or here: <a href="https://cosmoglint.github.io/the_blind_watchmaker/">https://cosmoglint.github.io/the_blind_watchmaker/</a></p>
+<p>Future projects I would like to work on:
+Standardize storage and access of human genetic information such that its easier for researchers and doctors to access and make use of.</p>
+
+</div>
+          
+            
+<div class="single_post">
+
+  <h2 class="post_heading"><a href="/blog/10_cloud_systems/">Getting started with cloud systems</a></h2>
+  <ul>
+    <li>14 Jul 2021</li>
+    
+      <li> 
+          Computer Science |
+         
+          Cloud Computing
+        
+      </li>    
+  
+  </ul>
+  <p>Learning system design with #crio.do</p>
+<p>I have refrained from understanding how cloud computing works, for fear of being overwhelmed by the AWS beginner guide. But I got a chance to understand it from a different source. Heres what I learnt from the system design miro experience.</p>
+<p>SETTING UP The first step in designing is to rent a virtual machine from Amazon Web Services. Create a new AWS account and head to the launch EC2 instance page. While setting up your virtual machine, youll be asked to create a key which will be used to access your machine with a secure shell from your computer. This key needs to be kept secure and this can be done by using</p>
+<p>chmod 400 key.pem</p>
+<p>command which allows only the admin to access the key file. next connect to the VM with the ssh command on linux or using putty on windows. After gaining access, set up a HTTP server on your machine using Nginx, which allows you to configure and set up a fresh website.</p>
+<p>In order to access your website a static IP (Ip that does not change every time you restart your machine) which can be done in the AWS from the elastic IP panel. This enables you to access your server from your web browser by typing the static ip address.</p>
+<p>DIVING IN Now that you have your server up and ready, we need a domain name to go with your server ( would you rather type google.com or 8.8.4.4 ?). After visiting a domain hosting site like godaddy.com ( and painstakingly finding a domain name that suits you) The static ip address of your server can now be assigned to your domain name. But everyone cannot access your website because AWS has inbuilt firewall that blocks all ports. So create a new access group and allow all http traffic through it from any ip. Now your website can be accessed with your domain name.</p>
+<p>ACTUAL SYSTEM DESIGN Now that we have our website ready to go, there needs to be a way to split up heavy traffic in your servers. To handle this set up a new VM the same way as before and configure it a static ip. Now in your domain name provider settings add this new ip to your domain name. This means when a person accesses your domain name, either of the two ip addresses gets served based on the current traffic (if one server is down, the other will be served).</p>
+<p>FINAL CONTENT DELIVERY With everything set up, if your website wants to deliver humongous files or large content, a content delivery netword will reduce the time taken to serve it to a user.So set up an account with some free cdn providers. The basic idea of a cdn is creating cached version of your content in multiple parts of the world so that the content can be accessed by people from various parts without much delay.</p>
+<p>THOUGHTS This micro experience was a fun way to explore new territories and the #IBelieveInDoing workshop was a deep and enlightening experience. Glad to have been a part of this wornderful endeavour.</p>
+
+</div>
+          
+            
+<div class="single_post">
+
+  <h2 class="post_heading"><a href="/blog/9_emission_volumetrics_shaders/">Emission Volumetrics and volume shaders</a></h2>
+  <ul>
+    <li>20 May 2021</li>
+    
+      <li> 
+          Blender |
+         
+          Shaders |
+         
+          Volumetrics
+        
+      </li>    
+  
+  </ul>
+  <p>These are two closely related shaders that go well with each other. Lets start with the emission. It makes an object glow with a particular colour. This is useful when the lighting used in a scene is shaped a particular way(like those halo lights streamers use). This gives the scene the specific look imagined.</p>
+<p>If you’ve seen a rendered image and something made it look ethereal or punchy, its probably the emission shader.</p>
+<p>The way this works with volume shaders is crazy. Volume shaders differ from normal shaders. Normal surface shaders give a look only to the surface of the object. It does not affect the size or the density of the object. Here’s where volumes come in. Volume shaders give the entire volume a particular look. It can be used to determine how much light enters the object(imagine light shone on ice).</p>
+<p>When the density of the volune is given a small number like 0.05 to .5, this gives the entire object a slight foggy look. The anisotropy value is set to about 0.3. Anisotropy is basically getting a different look from different angles(this is such a deep topic that deserves its own post).</p>
+<p>When another object with emission shader is placed inside the volume object, voila you get cool rays from the emission object that give the scene depth instead of just being normal lighting. This is called volumetrics where you can actually view the light direction. There is a world volume shader which shades the entire world with the particular volume.</p>
+<p>So, it’s no surprise that most of my renders have crazy colored emissions and volumetrics.</p>
+
+</div>
+          
+            
+<div class="single_post">
+
+  <h2 class="post_heading"><a href="/blog/8_freaky_wireframes/">Freaky Wireframes</a></h2>
+  <ul>
+    <li>14 Feb 2021</li>
+    
+      <li> 
+          Blender |
+         
+          Tricks
+        
+      </li>    
+  
+  </ul>
+  <p>Let’s talk about the wireframe modifier. Looks like just another boring modifier but honestly one of the more powerful modifiers available.</p>
+<p>It takes a solid object and converts it into another solid mesh with the original object’s edges. The more you difficult the merrier.</p>
+<p>The offset value determines if the mesh appears inside or outside the original object, essentially allowing you to create cool effects with a duplicated object along with the original. More cool effects if used with the boolean modifier</p>
+<p>The vertex group provides an area in which the modifier is to be applied</p>
+<p>Thickness factor determines the sharp or round edges for the new mesh work that is created.</p>
+<p>Replace original replaces the original mesh with the created mesh essentially creating a new object.</p>
+<p>That’s all there is to know about this particular modifier but not all of it’s applications. One crazy use i found was creatting veins in a leaf. The top modifier on my favourites list only after the wave modifier.</p>
+
+</div>
+          
+            
+<div class="single_post">
+
+  <h2 class="post_heading"><a href="/blog/7_1_bellman_markov_q/">Bellman, Markov and the Q</a></h2>
+  <ul>
+    <li>12 Jan 2021</li>
+    
+      <li> 
+          Computer Science |
+         
+          Machine Learning |
+         
+          Markov
+        
+      </li>    
+  
+  </ul>
+  <p>Surfing through some hackerrank profiles, I found a guy, who made an AI chess addon that can view any chess board in a browsre page and provide a continuation for it. Which got me really interested in AI and spending money on udemy.</p>
+<p>The concept that was the base of all the AI magic was the bellman’s equation.</p>
+<p>It describes that the value of any state of an environment as the maximum sum of reward for performing an action and the value of the next state.</p>
+<p>The bellman’s equation goes like so</p>
+<p>V(s) = max(R(s,a) + ∆V(s’))</p>
+<p>But this equation is for static environments with no probability.</p>
+<p>For environments with a probability factor, markov equation gives an equation with consideration of randomness</p>
+<p>V(s) = max(R(s,a) + ∆*sum(p(s,a,s’)V(s’)))</p>
+<p>But even better is the concept of q learning. The base concept of q learning is that, instead of giving values to a state and action, we definitely the quality of an action. This has the effect of separating each state based on the actions it can take and prescribing the best action to take also considering random probability.</p>
+<p>Q(s,a) = R(s.a) + ∆*sum (p(s,a,s’)*max (Q(s’,a’)))</p>
+<p>This recursively gives the action based on previous action quality, thereby providing more accurate Intel and paths to traverse the environment.</p>
+<p>The temporal difference is yhe difference between previous q value and newly calculated q value based on new information. This temporal difference is dynamic and chooses best action based on previous and current data</p>
+<p>TD(a,s) = R(s, a) + ∆max (Q(s’, a’) – Qt-1(s, a))</p>
+<p>And</p>
+<p>Qt(s,a) = Qt-1(s,a) + ∆TDt(a,s)</p>
+<p>=&gt; Qt(s,a) = Qt-1(s,a) + @(R(s, a) + ∆max (Q(s’, a’) – Qt-1(s, a)))</p>
+<p>Which may look complicated but simple enough and means that current Q value depends on previous Q values and the current reward thereby changing any value dynamically based on rewards acquired. If the new value is low the old value is kept as such. Rewards can be given at any state of the environment, gaining accurate control and precision over the agent</p>
+<p>R – reward</p>
+<p>V – value</p>
+<p>Q – quality</p>
+<p>P – probability of an action (or randomness in environment)</p>
+<p>TD – temporal difference</p>
+<p>You can always teach a new dog new tricks, if it’s willing to learn.</p>
+
+</div>
+          
+            
+<div class="single_post">
+
+  <h2 class="post_heading"><a href="/blog/7_domain_system/">Domain System</a></h2>
+  <ul>
+    <li>11 Jan 2021</li>
+    
+      <li> 
+          Computer Science |
+         
+          DNS |
+         
+          Routing
+        
+      </li>    
+  
+  </ul>
+  <p>The domain name system, DNS for short is one of those creative ideas that make human life easier on the internet. The system is for converting human understandable domain names into ip addresses for easy relembrance and searching of a particular ip address.</p>
+<p>There are four important parts for a smooth domain retrieval. They are the recursive DNS retriever, the Top Level Domain nameserver, root nameserver and authoritative nameserver.</p>
+<p>The recuesive retriever is the first one to recieve the user input ‘theserver.com’ this then queries the DNS root nameserver.</p>
+<p>This then sends the query to a TLD nameserver which has the .com level domain.</p>
+<p>The TLD replies with the domain nameserver consisiting of theserver.com domain name which then sends the ip address of the domain.</p>
+<p>Finally the DNS resolver responds to the user browser by providing the ip address found, and renders the webpage that is to be shown to the user.</p>
+<p>The crazy cool thing is how a computer figuratively understands human language does what needs to be done by itself.</p>
+
+</div>
+          
+            
+<div class="single_post">
+
+  <h2 class="post_heading"><a href="/blog/6_vaccuums_and_tubes/">Vacuums and tubes</a></h2>
+  <ul>
+    <li>6 Jan 2021</li>
+    
+      <li> 
+          Computer Science |
+         
+          Transistors
+        
+      </li>    
+  
+  </ul>
+  <p>Disassembling an old tape recorder, I found there were tiny bulb structures that didn’t seem to light up (or have tungsten for that matter). Upon research I was surprised to find that there was a time in history where silicon was just sand.</p>
+<p>This was the period of vaccum tubes. This is a creative engineering solution for computing problems.</p>
+<p>The tube consists of two electrodes(as usual) the cathode and anode. The cathode is heated which produces electrons due to a phenomenon called thermionic emission. The concept is that metals emit electrons when heated. These electrons reach the anode due to the positive potential at the anode. This creates a currentflow from anode to cathode(electricity flows opposite to electrons).</p>
+<p>Thereby it essentially creates a diode (di-electrode??). Diodes conduct in one direction only. This diode was used mainly for rectification of ac to dc.</p>
+<p>For transistors, a thurd electrode was installed in between the cathode and anode. This was a metal mesh which was given an external negative supply voltage. This negative voltage repels the electron flow. By controlling the voltage level we can essentially control the circuit current creating a triode.</p>
+<p>Triodes are mainly used as amplifiers because they are in essence an electric switch. This triode was also used to construct logic gates.</p>
+<p>There was even a variant with four and five electrodes, the two additional eoectrodes called screen grid and suppression grid for further control of electron flow.</p>
+<p>The entirety of the tube is kept in vaccum to provide clear paths for the electrons.</p>
+<p>Now that, is something to marvel about.</p>
+
+</div>
+          
+            
+<div class="single_post">
+
+  <h2 class="post_heading"><a href="/blog/5_problem_with_binary/">Problem with Binary</a></h2>
+  <ul>
+    <li>4 Jan 2021</li>
+    
+      <li> 
+          Computer Science |
+         
+          Binary
+        
+      </li>    
+  
+  </ul>
+  <p>Confusion arose when the lights turned on when they were supposed to be off and lit the room blue.</p>
+<p>The LED was connected to pin 18 of the gpio and given an on pulse. But nothing interesting happened. When the off signal was given, the LED started off.</p>
+<p>Upon investigating the problem in the strange waters of the internet, there were a lot of confusing answers and I realized the fact that a basic understanding of how LEDs and gpio works was essential.</p>
+<p>GPIO input/output pin works by sending a 1 for on pulse and a 0 for off pulse. 1 represents sourcing and 0 represents sinking current. So 1 doesn’t necessarily mean turning the connected device on. It just means a current is sourced.</p>
+<p>If the anode of the LED is connected to the I/O port the port can provide only a 12mA current source. This means th LED doesn’t have enough current.</p>
+<p>But if the cathode was connected to I/O instead, and the anode to the 3V supply, (more than 20 mA) full brightness can be reached but the configuration is inverted and LED turns on, when the 0 pulse is given and off when the 1 pulse is given.</p>
+<p>The best way to adress this boggling issue is to change the configuration in the code from 1 for on, to 0 for on. Although this sounds like a workaraound, truth is, no one cares how it works and just wants to see that light glow</p>
+
+</div>
+          
+            
+<div class="single_post">
+
+  <h2 class="post_heading"><a href="/blog/4_1_internet_protocols/">Problem with Binary</a></h2>
+  <ul>
+    <li>3 Jan 2021</li>
+    
+      <li> 
+          Computer Science |
+         
+          Internet
+        
+      </li>    
+  
+  </ul>
+  <p>Therw are two protocols for internet traffic.</p>
+<p>TCP(transmission control protocol) is the safe and secure protocol. It engages a three way handshake with the recipient. The first phase is the SYN(chronous) where it establishes and verifies connection with the neighbour. The second phase is the SYN ack(synchronous acknowledgement) where the recipient computer ensures connection. The third phase is acknowledgement when the sender computer acknowledges the SYN ack and starts sending data. This method is slow and takes a lot of bandwidth but is extremely secure. If there is a loss of data packet, TCP asks the sender to resend that particular packet</p>
+<p>But, UDP is all about dat speed. It doesn’t even verify SYN, but keeps on sending packets without any concern for the recieving computer. The advantage is it’s high speed and bandwidth.</p>
+<p>Personally, I prefer UDP, because loss or frame has a very low probability of occouring and ofc everyone prefers fast over secure</p>
+
+</div>
+          
+            
+<div class="single_post">
+
+  <h2 class="post_heading"><a href="/blog/4_blindfold_perms/">Blindfold and Perms</a></h2>
+  <ul>
+    <li>2 Jan 2021</li>
+    
+      <li> 
+          Speedcubing |
+         
+          Math
+        
+      </li>    
+  
+  </ul>
+  <p>Solving the Rubik’s cube sub-one minute is cool, solving it sub five is probably overkill. But solving it blindfolded is a whole another story. It isn’t hard or anything until you reach the world of parity. Let’s get some basics straight</p>
+<p>Lets forget orientation for this one and focus on permutation. From the permutation groups field in mathematics, the edges and corners of a rubiks cube can only be shuffled around in odd numbered groups(excluding one, because you can’t switch a single piece, duh).</p>
+<p>The problem arises when two edges and two corners are switched. This occours in 50 percent of solves. Speaking plainly the parity inverses itself for single turn of any face of the cube.</p>
+<p>But, don’t turn that face too fast because remembering cube positions is hard enough without having to calculate ten different transitions in blindfold solve. Common algorithms can switch only 3 edges or corners. Thats when the T perm comes in. The cool algorithm swaps edges 2-3 and corners 2-3. Its a leap akin to an ant moving into the third dimension (and thereby solving string theory).</p>
+<p>This means that any algorithm that swaps even numbered pieces is a permutation parity solver. The other perms like J perm and F perm look more appealing than the T perm but as far as solving the parity goes, only one face rotation is enough, as long as you don’t have that blindfold on.</p>
+
+</div>
+          
+            
+<div class="single_post">
+
+  <h2 class="post_heading"><a href="/blog/3_hard_not_tough/">Hard Not Tough</a></h2>
+  <ul>
+    <li>4 Dec 2020</li>
+    
+      <li> 
+          Physics |
+         
+          Planar Faces
+        
+      </li>    
+  
+  </ul>
+  <p>I was always confident that diamonds can be broken with a hammer. But my world was shattered when a guy hit a diamond with a hammer and it made a dent on the anvil. A few seconds later the same guy broke it with a comparitively powerless hit. There was definitely something shiny here.</p>
+<p>To understand what was going on I had to understand the difference between hardness and toughness.</p>
+<p>Hardness is the material’s resistance towards plastic deformation</p>
+<p>Toughness is the material’s ability to absorb energy without shattering.</p>
+<p>Diamond is extremely hard but not tough enough. You can scratch any surface with diamond but diamond breaks when enough force is applied.</p>
+<p>But what about the dent on the anvil? That arises from the fact that the crystal structure has various planar surfaces. Of these planes some split without much energy and others require a lot of energy. Hence,hitting a diamond on its octahedral plane beaks it with a clean cut but on other angles it doesn’t, and dents stuff.</p>
+<p>Fun fact, due to its extremely clean cut faces, the diamond face is hydrophobic(doesn’t let water stick) and lipophilic(lets oil stick).</p>
+<p>Now that is some crazy physics.</p>
+
+</div>
+          
+            
+<div class="single_post">
+
+  <h2 class="post_heading"><a href="/blog/2_blender_lazy_select/">Select stuff the lazy way (in edit mode)</a></h2>
   <ul>
     <li>1 Dec 2020</li>
     
@@ -65,7 +523,7 @@
             
 <div class="single_post">
 
-  <h2 class="post_heading"><a href="/blog/blog-1/">Stuff That Leaves Forever</a></h2>
+  <h2 class="post_heading"><a href="/blog/1_beginning/">Stuff That Leaves Forever</a></h2>
   <ul>
     <li>1 Dec 2020</li>
     
@@ -95,7 +553,7 @@
 <div id="footer">
     <nav>
         <ul>
-        <li><a href="https://github.com/thedoodler" > <i class="fa fa-github"></i></a></li>
+        <li><a href="https://github.com/imnuvi" > <i class="fa fa-github"></i></a></li>
         <li><a href="https://www.hackerrank.com/thedoodler" > <i class="fab fa-hackerrank"></i></a></li>
         <li><a href="https://www.instagram.com/ram._.prakash/" > <i class="fa fa-instagram"></i></a></li>
         <li><a href="https://www.linkedin.com/in/ram-prakash1/" > <i class="fa fa-linkedin"></i></a></li>

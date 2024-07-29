@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DNS on My New Hugo Site</title>
+    <link>http://localhost:1337/tags/dns/</link>
+    <description>Recent content in DNS on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Jan 2021 03:48:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1337/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Domain System</title>
+      <link>http://localhost:1337/blog/7_domain_system/</link>
+      <pubDate>Mon, 11 Jan 2021 03:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/blog/7_domain_system/</guid>
+      <description>Disassembling an old tape recorder, I found there were tiny bulb structures that didn’t seem to light up (or have tungsten for that matter). Upon research I was surprised to find that there was a time in history where silicon was just sand.&#xA;This was the period of vaccum tubes. This is a creative engineering solution for computing problems.&#xA;The tube consists of two electrodes(as usual) the cathode and anode. The cathode is heated which produces electrons due to a phenomenon called thermionic emission.</description>
+    </item>
+  </channel>
+</rss>

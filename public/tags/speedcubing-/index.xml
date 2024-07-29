@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Speedcubing | on My New Hugo Site</title>
+    <link>http://localhost:1337/tags/speedcubing-/</link>
+    <description>Recent content in Speedcubing | on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Jan 2021 06:45:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1337/tags/speedcubing-/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blindfold and Perms</title>
+      <link>http://localhost:1337/blog/4_blindfold_perms/</link>
+      <pubDate>Sat, 02 Jan 2021 06:45:00 -0700</pubDate>
+      <guid>http://localhost:1337/blog/4_blindfold_perms/</guid>
+      <description>Solving the Rubik’s cube sub-one minute is cool, solving it sub five is probably overkill. But solving it blindfolded is a whole another story. It isn’t hard or anything until you reach the world of parity. Let’s get some basics straight&#xA;Lets forget orientation for this one and focus on permutation. From the permutation groups field in mathematics, the edges and corners of a rubiks cube can only be shuffled around in odd numbered groups(excluding one, because you can’t switch a single piece, duh).</description>
+    </item>
+  </channel>
+</rss>

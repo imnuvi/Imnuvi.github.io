@@ -9,6 +9,6 @@ tags:
 params:
     Image: /projects/images/Stringing.png
     SourceCode: https://github.com/cosmoglint/stuff_with_p5
-    ProjectLink: https://cosmoglint.github.io/stuff_with_p5/2_cardioid_times_tables/
+    ProjectLink: https://imnuvi.github.io/stuff_with_p5/2_cardioid_times_tables/
 ---
 Visualize how multiplicative numbers generate cool patterns

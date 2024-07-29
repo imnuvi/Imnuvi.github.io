@@ -162,6 +162,9 @@ body {
   padding-bottom: 2.5em;
   margin: auto;
   background-color: var(--white-pure);
+  line-height: 2em;
+  letter-spacing: 0.008em;
+  word-spacing: 0.2em;
 }
 
 
@@ -246,7 +249,7 @@ body {
   content: none;
 }
 
-.single_post > h5 {
+/* .single_post > h5 {
   font-weight: bold;
   font-size: 1em;
 }
@@ -266,13 +269,14 @@ body {
 .single_post > p {
   font-size: 0.8em;
   font-weight: 200;
-}
+} */
 
 
 .single_post > h3, h4, h5, p {
   width: 60%;
   margin: auto;
   text-align: left;
+  line-height: 2.0em;
 }
 
 

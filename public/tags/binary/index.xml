@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Binary on My New Hugo Site</title>
+    <link>http://localhost:1337/tags/binary/</link>
+    <description>Recent content in Binary on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Jan 2021 06:45:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1337/tags/binary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Problem with Binary</title>
+      <link>http://localhost:1337/blog/5_/</link>
+      <pubDate>Sat, 02 Jan 2021 06:45:00 -0700</pubDate>
+      <guid>http://localhost:1337/blog/5_/</guid>
+      <description>Confusion arose when the lights turned on when they were supposed to be off and lit the room blue.&#xA;The LED was connected to pin 18 of the gpio and given an on pulse. But nothing interesting happened. When the off signal was given, the LED started off.&#xA;Upon investigating the problem in the strange waters of the internet, there were a lot of confusing answers and I realized the fact that a basic understanding of how LEDs and gpio works was essential.</description>
+    </item>
+  </channel>
+</rss>
