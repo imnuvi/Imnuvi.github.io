@@ -1,0 +1,15 @@
+<div class="single_project">
+
+  <div class="image">
+      <div class="the_image"><a href={{ .Params.ProjectLink }}><img src="{{ .Params.Image }}"></a></div>
+  </div>
+
+  <div class="description">
+
+    <h3>{{ .Title }}</h3>
+    <p>{{ .Content }}</p>
+    <a href={{ .Params.ProjectLink }} class="visit">visit</a>
+    <a href={{ .Params.SourceCode }} calss="source">source code</a>
+
+  </div>
+</div>

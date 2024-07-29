@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on My New Hugo Site</title>
+    <link>http://localhost:1337/projects/</link>
+    <description>Recent content in Projects on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Jan 2023 13:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1337/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stringing</title>
+      <link>http://localhost:1337/projects/project-3/</link>
+      <pubDate>Tue, 10 Jan 2023 13:00:00 -0700</pubDate>
+      <guid>http://localhost:1337/projects/project-3/</guid>
+      <description>Visualize how multiplicative numbers generate cool patterns</description>
+    </item>
+    <item>
+      <title>Conways Game Of Life</title>
+      <link>http://localhost:1337/projects/project-2/</link>
+      <pubDate>Tue, 10 Jan 2023 12:00:00 -0700</pubDate>
+      <guid>http://localhost:1337/projects/project-2/</guid>
+      <description>An implementation of Cellular automaton by John Conway</description>
+    </item>
+    <item>
+      <title>The Blind Watchmaker</title>
+      <link>http://localhost:1337/projects/project-1/</link>
+      <pubDate>Tue, 10 Jan 2023 11:00:00 -0700</pubDate>
+      <guid>http://localhost:1337/projects/project-1/</guid>
+      <description>selective evolution on a species of fractals.</description>
+    </item>
+  </channel>
+</rss>

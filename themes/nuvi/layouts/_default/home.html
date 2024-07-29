@@ -1,0 +1,71 @@
+<!-- {{ define "main" }}
+  {{ .Content }}
+  {{ range site.RegularPages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+  {{ end }}
+{{ end }}
+ -->
+
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="homepage/css/mystyle.css">
+    <script src="https://kit.fontawesome.com/2f9f7e1032.js" crossorigin="anonymous"></script>
+    <title>Ram Prakash</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="buttons">
+        <i style="font-size:1.5em" id="night_mode" class="fas fa-sun fa-ls"></i>
+      </div>
+      <div id="main">
+        <nav id="nav">
+
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="homepage/pdfs/ram_resume.pdf">Resume</a></li>
+            <li><a href="art">Art</a></li>
+          </ul>
+
+        </nav>
+
+        <div id='content'>
+
+          <div id="namediv">
+            <h1 id="name">Ram Prakash</h1>
+            <p>Developer &nbsp;&bull;&nbsp; Problem Solver &nbsp;&bull;&nbsp; Artist </p>
+          </div>
+
+          <!-- <div id='shadows'>
+
+            <h1 id="name_shadow">Ram Prakash</h1>
+
+          </div> -->
+
+        </div>
+      </div>
+
+      <div id="footer">
+        <nav>
+          <ul>
+            <li><a href="https://github.com/thedoodler" > <i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.hackerrank.com/thedoodler" > <i class="fab fa-hackerrank"></i></a></li>
+            <li><a href="https://www.instagram.com/ram._.prakash/" > <i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ram-prakash1/" > <i class="fa fa-linkedin"></i></a></li>
+            <li><a href="mailto:ramprakshsmail@gmail.com" > <i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+
+    </div>
+    <script src="homepage/js/p5.min.js"></script>
+		<script src="homepage/js/experiment.js"></script>
+		<script src="homepage/js/tries.js"></script>
+  </body>
+</html>
