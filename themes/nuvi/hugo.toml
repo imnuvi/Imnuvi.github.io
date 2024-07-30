@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://ramprakash.blog/'
 languageCode = 'en-US'
-title = 'My New Hugo Site'
+title = 'Ram Prakash'
 
 [[menus.main]]
 name = 'Home'
