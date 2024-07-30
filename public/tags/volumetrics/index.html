@@ -7,7 +7,11 @@
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/2f9f7e1032.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/libraries/highlightjs/styles/base16/chalk.min.css"/>
+    <script src="/libraries/highlightjs/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>Volumetrics</title>
+
   </head>
 </head>
 <body>
@@ -32,10 +36,9 @@
   <h1>Volumetrics</h1>
   
   
-    <h2><a href="/blog/9_/">Emission Volumetrics and volume shaders</a></h2>
-    Let’s talk about the wireframe modifier. Looks like just another boring modifier but honestly one of the more powerful modifiers available.
-It takes a solid object and converts it into another solid mesh with the original object’s edges. The more you difficult the merrier.
-The offset value determines if the mesh appears inside or outside the original object, essentially allowing you to create cool effects with a duplicated object along with the original.
+    <h2><a href="/blog/9_emission_volumetrics_shaders/">Emission Volumetrics and volume shaders</a></h2>
+    These are two closely related shaders that go well with each other. Lets start with the emission. It makes an object glow with a particular colour. This is useful when the lighting used in a scene is shaped a particular way(like those halo lights streamers use). This gives the scene the specific look imagined.
+If you’ve seen a rendered image and something made it look ethereal or punchy, its probably the emission shader.
   
 
   </main>

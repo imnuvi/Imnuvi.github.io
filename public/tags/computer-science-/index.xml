@@ -6,14 +6,63 @@
     <description>Recent content in Computer Science | on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Jan 2021 06:45:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2024 06:48:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1337/tags/computer-science-/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Functional Programming with Elixir</title>
+      <link>http://localhost:1337/blog/12_functional_programming_with_elixir/</link>
+      <pubDate>Mon, 15 Jul 2024 06:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/blog/12_functional_programming_with_elixir/</guid>
+      <description>During my time as a professional software developer, I have always been working with object oriented languages and all codebases I have interacted with have been written with the object oriented paradigm. So when I came across the functional programming paradigm, I got curious to learn more. Reading about Haskell and Clojure portrayed functional languages as hard to grasp and not very useful. But I found out about elixir and the syntax looked promising.</description>
+    </item>
+    <item>
+      <title>The Blind Watchmaker</title>
+      <link>http://localhost:1337/blog/11_the_blind_watchmaker/</link>
+      <pubDate>Thu, 14 Dec 2023 06:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/blog/11_the_blind_watchmaker/</guid>
+      <description>Genome Dynamics Visualization App: Description: During my Undergraduate years, I got introduced to the concept of The Blind Watchmaker by Richard Dawkins. The concept intrigued me a lot, and I got the chance to recreate and visualize the concept with the help of programming. The Program lets the user interact with a set of organisms and select the winning organism each generation, and the subsequent organisms will evolve the desired organ with superior functionality.</description>
+    </item>
+    <item>
+      <title>Getting started with cloud systems</title>
+      <link>http://localhost:1337/blog/10_cloud_systems/</link>
+      <pubDate>Wed, 14 Jul 2021 04:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/blog/10_cloud_systems/</guid>
+      <description>Learning system design with #crio.do&#xA;I have refrained from understanding how cloud computing works, for fear of being overwhelmed by the AWS beginner guide. But I got a chance to understand it from a different source. Heres what I learnt from the system design miro experience.&#xA;SETTING UP The first step in designing is to rent a virtual machine from Amazon Web Services. Create a new AWS account and head to the launch EC2 instance page.</description>
+    </item>
+    <item>
+      <title>Bellman, Markov and the Q</title>
+      <link>http://localhost:1337/blog/7_1_bellman_markov_q/</link>
+      <pubDate>Tue, 12 Jan 2021 03:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/blog/7_1_bellman_markov_q/</guid>
+      <description>Surfing through some hackerrank profiles, I found a guy, who made an AI chess addon that can view any chess board in a browsre page and provide a continuation for it. Which got me really interested in AI and spending money on udemy.&#xA;The concept that was the base of all the AI magic was the bellman’s equation.&#xA;It describes that the value of any state of an environment as the maximum sum of reward for performing an action and the value of the next state.</description>
+    </item>
+    <item>
+      <title>Domain System</title>
+      <link>http://localhost:1337/blog/7_domain_system/</link>
+      <pubDate>Mon, 11 Jan 2021 03:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/blog/7_domain_system/</guid>
+      <description>The domain name system, DNS for short is one of those creative ideas that make human life easier on the internet. The system is for converting human understandable domain names into ip addresses for easy relembrance and searching of a particular ip address.&#xA;There are four important parts for a smooth domain retrieval. They are the recursive DNS retriever, the Top Level Domain nameserver, root nameserver and authoritative nameserver.&#xA;The recuesive retriever is the first one to recieve the user input ‘theserver.</description>
+    </item>
+    <item>
+      <title>Vacuums and tubes</title>
+      <link>http://localhost:1337/blog/6_vaccuums_and_tubes/</link>
+      <pubDate>Wed, 06 Jan 2021 03:34:00 -0700</pubDate>
+      <guid>http://localhost:1337/blog/6_vaccuums_and_tubes/</guid>
+      <description>Disassembling an old tape recorder, I found there were tiny bulb structures that didn’t seem to light up (or have tungsten for that matter). Upon research I was surprised to find that there was a time in history where silicon was just sand.&#xA;This was the period of vaccum tubes. This is a creative engineering solution for computing problems.&#xA;The tube consists of two electrodes(as usual) the cathode and anode. The cathode is heated which produces electrons due to a phenomenon called thermionic emission.</description>
+    </item>
+    <item>
       <title>Problem with Binary</title>
-      <link>http://localhost:1337/blog/5_/</link>
-      <pubDate>Sat, 02 Jan 2021 06:45:00 -0700</pubDate>
-      <guid>http://localhost:1337/blog/5_/</guid>
+      <link>http://localhost:1337/blog/5_problem_with_binary/</link>
+      <pubDate>Mon, 04 Jan 2021 06:47:00 -0700</pubDate>
+      <guid>http://localhost:1337/blog/5_problem_with_binary/</guid>
       <description>Confusion arose when the lights turned on when they were supposed to be off and lit the room blue.&#xA;The LED was connected to pin 18 of the gpio and given an on pulse. But nothing interesting happened. When the off signal was given, the LED started off.&#xA;Upon investigating the problem in the strange waters of the internet, there were a lot of confusing answers and I realized the fact that a basic understanding of how LEDs and gpio works was essential.</description>
+    </item>
+    <item>
+      <title>Problem with Binary</title>
+      <link>http://localhost:1337/blog/4_1_internet_protocols/</link>
+      <pubDate>Sun, 03 Jan 2021 06:47:00 -0700</pubDate>
+      <guid>http://localhost:1337/blog/4_1_internet_protocols/</guid>
+      <description>Therw are two protocols for internet traffic.&#xA;TCP(transmission control protocol) is the safe and secure protocol. It engages a three way handshake with the recipient. The first phase is the SYN(chronous) where it establishes and verifies connection with the neighbour. The second phase is the SYN ack(synchronous acknowledgement) where the recipient computer ensures connection. The third phase is acknowledgement when the sender computer acknowledges the SYN ack and starts sending data.</description>
     </item>
   </channel>
 </rss>

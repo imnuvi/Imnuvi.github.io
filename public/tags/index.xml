@@ -6,8 +6,29 @@
     <description>Recent content in Tags on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2024 06:48:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1337/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Biology |</title>
+      <link>http://localhost:1337/tags/biology-/</link>
+      <pubDate>Mon, 15 Jul 2024 06:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/biology-/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer Science |</title>
+      <link>http://localhost:1337/tags/computer-science-/</link>
+      <pubDate>Mon, 15 Jul 2024 06:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/computer-science-/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evolution</title>
+      <link>http://localhost:1337/tags/evolution/</link>
+      <pubDate>Mon, 15 Jul 2024 06:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/evolution/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Blue</title>
       <link>http://localhost:1337/tags/blue/</link>
@@ -93,17 +114,108 @@
       <description></description>
     </item>
     <item>
-      <title>Evolution</title>
-      <link>http://localhost:1337/tags/evolution/</link>
-      <pubDate>Tue, 10 Jan 2023 11:00:00 -0700</pubDate>
-      <guid>http://localhost:1337/tags/evolution/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Space</title>
       <link>http://localhost:1337/tags/space/</link>
       <pubDate>Tue, 10 Jan 2023 11:00:00 -0700</pubDate>
       <guid>http://localhost:1337/tags/space/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Computing</title>
+      <link>http://localhost:1337/tags/cloud-computing/</link>
+      <pubDate>Wed, 14 Jul 2021 04:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/cloud-computing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blender |</title>
+      <link>http://localhost:1337/tags/blender-/</link>
+      <pubDate>Thu, 20 May 2021 04:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/blender-/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shaders |</title>
+      <link>http://localhost:1337/tags/shaders-/</link>
+      <pubDate>Thu, 20 May 2021 04:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/shaders-/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Volumetrics</title>
+      <link>http://localhost:1337/tags/volumetrics/</link>
+      <pubDate>Thu, 20 May 2021 04:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/volumetrics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tricks</title>
+      <link>http://localhost:1337/tags/tricks/</link>
+      <pubDate>Sun, 14 Feb 2021 04:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/tricks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine Learning |</title>
+      <link>http://localhost:1337/tags/machine-learning-/</link>
+      <pubDate>Tue, 12 Jan 2021 03:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/machine-learning-/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Markov</title>
+      <link>http://localhost:1337/tags/markov/</link>
+      <pubDate>Tue, 12 Jan 2021 03:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/markov/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DNS |</title>
+      <link>http://localhost:1337/tags/dns-/</link>
+      <pubDate>Mon, 11 Jan 2021 03:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/dns-/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Routing</title>
+      <link>http://localhost:1337/tags/routing/</link>
+      <pubDate>Mon, 11 Jan 2021 03:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/routing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transistors</title>
+      <link>http://localhost:1337/tags/transistors/</link>
+      <pubDate>Wed, 06 Jan 2021 03:34:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/transistors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Binary</title>
+      <link>http://localhost:1337/tags/binary/</link>
+      <pubDate>Mon, 04 Jan 2021 06:47:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/binary/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Internet</title>
+      <link>http://localhost:1337/tags/internet/</link>
+      <pubDate>Sun, 03 Jan 2021 06:47:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/internet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Math</title>
+      <link>http://localhost:1337/tags/math/</link>
+      <pubDate>Sat, 02 Jan 2021 06:45:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/math/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Speedcubing |</title>
+      <link>http://localhost:1337/tags/speedcubing-/</link>
+      <pubDate>Sat, 02 Jan 2021 06:45:00 -0700</pubDate>
+      <guid>http://localhost:1337/tags/speedcubing-/</guid>
       <description></description>
     </item>
     <item>
@@ -118,20 +230,6 @@
       <link>http://localhost:1337/tags/planar-faces/</link>
       <pubDate>Fri, 04 Dec 2020 12:00:00 -0700</pubDate>
       <guid>http://localhost:1337/tags/planar-faces/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Blender |</title>
-      <link>http://localhost:1337/tags/blender-/</link>
-      <pubDate>Tue, 01 Dec 2020 12:00:00 -0700</pubDate>
-      <guid>http://localhost:1337/tags/blender-/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tricks</title>
-      <link>http://localhost:1337/tags/tricks/</link>
-      <pubDate>Tue, 01 Dec 2020 12:00:00 -0700</pubDate>
-      <guid>http://localhost:1337/tags/tricks/</guid>
       <description></description>
     </item>
     <item>

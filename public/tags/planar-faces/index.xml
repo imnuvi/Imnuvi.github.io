@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1337/tags/planar-faces/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hard Not Tough</title>
-      <link>http://localhost:1337/blog/hard_not_tough/</link>
+      <link>http://localhost:1337/blog/3_hard_not_tough/</link>
       <pubDate>Fri, 04 Dec 2020 12:00:00 -0700</pubDate>
-      <guid>http://localhost:1337/blog/hard_not_tough/</guid>
+      <guid>http://localhost:1337/blog/3_hard_not_tough/</guid>
       <description>I was always confident that diamonds can be broken with a hammer. But my world was shattered when a guy hit a diamond with a hammer and it made a dent on the anvil. A few seconds later the same guy broke it with a comparitively powerless hit. There was definitely something shiny here.&#xA;To understand what was going on I had to understand the difference between hardness and toughness.</description>
     </item>
   </channel>

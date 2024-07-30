@@ -249,7 +249,7 @@ body {
   content: none;
 }
 
-/* .single_post > h5 {
+.single_post > h5 {
   font-weight: bold;
   font-size: 1em;
 }
@@ -264,15 +264,25 @@ body {
   font-size: 1.2em;
 }
 
+.single_post > h2 {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.single_post > h1 {
+  font-weight: bold;
+  font-size: 1.6em;
+}
 
 
+ /* 
 .single_post > p {
   font-size: 0.8em;
   font-weight: 200;
 } */
 
 
-.single_post > h3, h4, h5, p {
+.single_post >  p, pre {
   width: 60%;
   margin: auto;
   text-align: left;
@@ -280,6 +290,11 @@ body {
 }
 
 
+
+.single_post > pre > code {
+  font-size: 80%;
+  line-height: 1.95em;
+}
 
 #buttons {
   position: absolute;

@@ -6,8 +6,22 @@
     <description>Recent content in Evolution on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Jan 2023 11:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2024 06:48:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1337/tags/evolution/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Functional Programming with Elixir</title>
+      <link>http://localhost:1337/blog/12_functional_programming_with_elixir/</link>
+      <pubDate>Mon, 15 Jul 2024 06:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/blog/12_functional_programming_with_elixir/</guid>
+      <description>During my time as a professional software developer, I have always been working with object oriented languages and all codebases I have interacted with have been written with the object oriented paradigm. So when I came across the functional programming paradigm, I got curious to learn more. Reading about Haskell and Clojure portrayed functional languages as hard to grasp and not very useful. But I found out about elixir and the syntax looked promising.</description>
+    </item>
+    <item>
+      <title>The Blind Watchmaker</title>
+      <link>http://localhost:1337/blog/11_the_blind_watchmaker/</link>
+      <pubDate>Thu, 14 Dec 2023 06:48:00 -0700</pubDate>
+      <guid>http://localhost:1337/blog/11_the_blind_watchmaker/</guid>
+      <description>Genome Dynamics Visualization App: Description: During my Undergraduate years, I got introduced to the concept of The Blind Watchmaker by Richard Dawkins. The concept intrigued me a lot, and I got the chance to recreate and visualize the concept with the help of programming. The Program lets the user interact with a set of organisms and select the winning organism each generation, and the subsequent organisms will evolve the desired organ with superior functionality.</description>
+    </item>
     <item>
       <title>The Blind Watchmaker</title>
       <link>http://localhost:1337/projects/project-1/</link>
