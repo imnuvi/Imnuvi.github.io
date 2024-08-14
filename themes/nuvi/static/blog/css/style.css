@@ -289,7 +289,11 @@ body {
   line-height: 2.0em;
 }
 
-
+.single_post >  p {
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  margin-bottom: 1em;
+  letter-spacing: -0.017em;
+}
 
 .single_post > pre > code {
   font-size: 80%;
