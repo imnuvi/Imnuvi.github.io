@@ -5,5 +5,5 @@ draft: false
 tags: 
 - doodle
 params:
-    image: /art/images/drawings/Smirk.jpg
+    image: /art/images/drawings/smirk.jpg
 ---
