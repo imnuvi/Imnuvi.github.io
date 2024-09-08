@@ -1,12 +1,13 @@
 ---
-title: Gene Machine Book Summary
-date: 2024-09-08T22:20:59-04:00
+title: 'Gene Machine Book'
+date: 2024-09-08T01:46:18-04:00
 draft: false
 tags: 
 - books |  
 - ribosomes |
 - biology
 ---
+
 
 ## Overview
 
