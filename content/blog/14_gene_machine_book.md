@@ -30,15 +30,15 @@ He goes in depth about each and every person he encountered in the journey to ex
 My favourite part of the book is when the group braces themselves and starts work on the project while on the moving to Europe, not knowing even if their research would lead to something.
 
 
-A few takeaways for me from this book were 
-- ribosomes perform a lot of steps to synthesize proteins : The ribosome started out as some sort of RNA backbone that acts as both a structural part as well as taking care of coding information
-- The scientific field is full of competition and full of smart people
+A few takeaways for me from this book were:
+**ribosomes perform a lot of steps to synthesize proteins** : The ribosome started out as some sort of RNA backbone that acts as both a structural part as well as taking care of coding information
+**The scientific field is full of competition and full of smart people**
   This becomes very clear in the way people act towards each other and try to one up the other people.
-- The author does not hesitate to criticize or point out when someone is wrong.
+**The author does not hesitate to criticize or point out when someone is wrong.**
   Usually this leads to Better outcomes for everyone involved but with sometimes you being the bad guy.
   It prevents problems that can happen in the future because of current disagreements.
-- Getting a prize and solving Scientific problems is not just about being smart it's about knowledge, knowing others and a good chunk of luck involved.
-- But the only thing that anyone can do is keep putting in the effort and going forward.
+**Getting a prize and solving Scientific problems is not just about being smart it's about knowledge, knowing others and a good chunk of luck involved.**
+  But the only thing that anyone can do is keep putting in the effort and going forward.
 
 
 Overall I think it is a very very nice book and anyone who is at a crossroads of careers thinking of pursuing studies or switching jobs, should definitely give this book a read. 
