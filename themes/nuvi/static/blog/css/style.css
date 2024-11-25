@@ -218,37 +218,6 @@ body {
 }
 
 
-
-.single_post > ul {
-
-  margin-block-end: 0em;
-  margin-block-start: 0em;
-  padding-bottom: 1em;
-
-}
-
-
-.single_post > ul > li {
-  list-style: none;
-  display: inline-block;
-  border: 0;
-  font-size: 0.8em;
-  letter-spacing: 0.05em;
-  padding-right: 1em;
-
-}
-
-.single_post > ul > li::after {
-  /* font-size: 1em; */
-  padding-left: 1em;
-  font-weight: bolder;
-  content: "\00b7"
-}
-
-.single_post > ul > li:last-child:after {
-  content: none;
-}
-
 .single_post > h5 {
   font-weight: bold;
   font-size: 1em;
@@ -299,6 +268,44 @@ body {
   font-size: 80%;
   line-height: 1.95em;
 }
+
+.single_post >  ul {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+  line-height: 2.0em;
+}
+
+.post_metadata {
+
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+  padding-bottom: 1em;
+  width: 150%;
+
+}
+
+.post_metadata > li {
+  list-style: none;
+  display: inline-block;
+  border: 0;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  padding-right: 1em;
+
+}
+
+.post_metadata li::after {
+  /* font-size: 1em; */
+  padding-left: 1em;
+  font-weight: bolder;
+  content: "\00b7"
+}
+
+.post_metadata > li:last-child:after {
+  content: none;
+}
+
 
 #buttons {
   position: absolute;

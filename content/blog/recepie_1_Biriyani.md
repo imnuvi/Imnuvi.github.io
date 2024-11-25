@@ -1,11 +1,12 @@
 ---
-title: Stuff That Leaves Forever
+title: Biriyani!!
 date: 2024-09-17T17:20:56-04:00
 draft: false
 tags: 
 - cooking | 
 - recipies |
-- cookbook
+- cookbook |
+- biriyani 
 ---
 
 
@@ -56,4 +57,4 @@ Now that we have everything ready, we can get started with the procedure.
 - Finally close the cooker and keep the heat at maximum. Once the whistle blows, turn the heat to simmer and let it cook in the simmer heat ( low heat ) for 10 more mins
     - As a replacement all of this can also be done in a rice cooker, and I have had good results from pressure cooking this.
 
-Let the pressure escape the cooker naturally and opne for some savoury Biryani. Serve with eggs and chicken curry!
+Let the pressure escape the cooker naturally and open for some savoury Biryani. Serve with eggs and chicken curry!
