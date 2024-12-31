@@ -57,6 +57,6 @@ Overall I learnt a lot about the musical process and how DAW works, but I think 
 
 Here is where you can listen to the pieces
 
-[Pixel Picnic](https://youtu.be/peviJm5uo0c?feature=shared)
+[Pixel Picnic](https://youtu.be/peviJm5uo0c?feature=shared)  
 [Pixel Dread](https://youtu.be/EBK6c6CwQl0?feature=shared)
 
