@@ -49,6 +49,8 @@ But I went through the comments section of youtube and the video had very bad re
 - Back Legs - Magic ring starting with 6 loops, with 4 increase lines, with the final line being a folded linking line, stitched through the middle for one.
 - Body - Magic ring starting from 7 and doing 5 increases till a total of 35 with the shell color, then switching to the body color thread. At around line 4, we leave 5 holes for the turte. one for the tail, and four for the fins/arms,legs by skipping some loops  
 
+![The cute Turtle](/blog/images/Crochet_turtle.jpg)
+
 
 If there is one moral lesson learnt from this, don't stop something before you have actually tried it out and given your all. You never know what you are good at and what life will throw at you ( hopefully it's a cyoot baby turtle ). I am really really happy with the turtle and will build more, but the first make of anything is always the best. The next thing I want to try is an octopus from the same person.
 

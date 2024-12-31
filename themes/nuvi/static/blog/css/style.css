@@ -276,6 +276,10 @@ body {
   line-height: 2.0em;
 }
 
+img {
+  max-width: 100%;
+}
+
 .post_metadata {
 
   margin-block-end: 0em;
