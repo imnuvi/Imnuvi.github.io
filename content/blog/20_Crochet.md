@@ -9,9 +9,11 @@ tags:
 
 ### Why
 
-I have always been interested and intrigued by crocheting. I have stared awed when my partner does it and the needle just keeps moving around with such ease. I gave it a try about a year ago and in theory I understood the basic concept - You make sure the hook end is aligned with the stretch of the hole. But when I tried it, it was just too hard and I pushed it off to later. 
+I have always been interested and intrigued by crocheting. I have stared in awe when my partner does it and the way the needle just keeps moving around with such ease. I gave it a try about a year ago and in theory I understood the basic concept - You make sure the hook end is aligned with the stretch of the hole and pull it through. But when I tried it, it was just too hard for my fingers to understand and I pushed it off to later. 
 
 About a week ago, I got the chance to crochet with a full kit and I jumped on the opportunity. I did'nt really like the patterns that came with the kit and I looked around youtube and found a pattern for a [cute little turtle](https://youtu.be/GKyTjMKKBWY?si=cH0RNOLNjK3Sj_Rr) and decided I was going to make it.
+
+### How
 
 So the pattern goes like this, you make the head, the tail and the hands, legs and then the shell.
 
@@ -52,6 +54,6 @@ But I went through the comments section of youtube and the video had very bad re
 ![The cute Turtle](/blog/images/Crochet_turtle.jpg)
 
 
-If there is one moral lesson learnt from this, don't stop something before you have actually tried it out and given your all. You never know what you are good at and what life will throw at you ( hopefully it's a cyoot baby turtle ). I am really really happy with the turtle and will build more, but the first make of anything is always the best. The next thing I want to try is an octopus from the same person.
+If there is one moral lesson learnt from this, don't stop something before you have actually tried it out and given your all. You never know what you are good at and what life will throw at you ( hopefully it's a cyoot baby turtle ). I am really really happy with the way it turned and will build more, but the first make of anything is always the best. The next thing I want to try is an octopus from the same person.
 
 P.S: I have called the crochet hook a needle everywhere.
