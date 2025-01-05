@@ -61,3 +61,12 @@ I know people get offended with me calling gelato ice cream, but hey.
 - A2 Arboretum - 10/10
 - Besant Nagar - 10/10
 - Marina Beach - 7/10
+
+### Programming languages
+
+- JS - 4/10
+- Java - 7/10
+- R - 3/10
+- Python - 9/10
+- Elixir - 10/10 ( I'm biased )
+- Matlab - 8/10
