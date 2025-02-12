@@ -9,7 +9,7 @@ tags:
 ---
 
 
-Probably one of my favourite way to make eggs, which I stole the recipie from my partner. If anyone ever tries eggs it should be this recipie.
+Probably one of my favourite way to make eggs, which I stole from my partner. If anyone ever tries eggs it should be this recipie.
 
 ### Ingredients
 
@@ -30,3 +30,5 @@ This is probably the most straightforward processe
 - once the oil is ready, remove it to a different bowl and use the same oil to toast the bread ( This makes it taste lovely )
 - Once all parts are ready, immerse the eggs in the cold water and break the shells off by lightly breaking them and removing.
 - To serve, take a good amquantity of curd in a bowl and cut the boiled eggs on top. Pour the chilly oil over and enjoy with slices of bread!
+
+![Turkish Eggs](/blog/images/Turkish_eggs.jpg)

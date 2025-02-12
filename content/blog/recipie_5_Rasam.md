@@ -34,3 +34,6 @@ This is a straightforward process, but very rewarding if done right.
 - Now pour the water mixture into the pan and heat it in low flame. *Do not heat in high flame to avoid the water boiling too fast*
 - After about 5 mins you will feel the aroma, and you can decide to add salt to taste.
 - This can now be eaten with rice and appalam in the side
+
+
+![Rasam](/blog/images/Rasam.jpg)
