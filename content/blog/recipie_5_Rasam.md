@@ -8,7 +8,7 @@ tags:
 - Cooking
 ---
 
-Whatever happens the most comforting food that I 
+Whatever happens the most comforting food that I make is Rasam + rice. This goes with anything - appalam, oorga and chicken and this is how I make it.
 
 ### Ingredients
 
