@@ -1,0 +1,25 @@
+
+<div class="single_post">
+
+  <h2 class="post_heading"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <ul class="post_metadata">
+    <li>{{ .Date.Format "2 Jan 2006" }}</li>
+    {{ with .GetTerms "tags" }}
+      <li>{{ range . }} 
+          {{ .LinkTitle }}
+        {{ end }}
+      </li>    
+  {{end}}
+  </ul>
+  <p>
+    {{ $content := .Content | plainify }} 
+    {{ $wordCount := 30 }} 
+    {{ $words := findRE `\S+` $content }} 
+    {{ if ge (len $words) $wordCount }}
+      {{ $truncated := first $wordCount $words }}
+      {{ delimit $truncated " " }}...
+    {{ else }}
+      {{ $content }}
+    {{ end }}
+  </p>
+</div>

@@ -21,3 +21,9 @@ weight = 30
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
+
+[outputs]
+  home = ['html', 'rss']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
