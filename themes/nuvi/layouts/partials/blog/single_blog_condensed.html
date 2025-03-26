@@ -13,7 +13,7 @@
   </ul>
   <p>
     {{ $content := .Content | plainify }} 
-    {{ $wordCount := 50 }} 
+    {{ $wordCount := 60 }} 
     {{ $words := findRE `\S+` $content }} 
     {{ if ge (len $words) $wordCount }}
       {{ $truncated := first $wordCount $words }}
