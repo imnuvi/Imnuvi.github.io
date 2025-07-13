@@ -1,6 +1,6 @@
 ---
-title : Sound Engineering
-date : 2025-02-11T22:19:32-05:00
+title : The Alignment Problem
+date : 2025-04-3T22:19:32-05:00
 draft : false
 tags:
 - Music
@@ -8,41 +8,40 @@ tags:
 - Production
 ---
 
-I recently signed up for a certification course in sound Engineering. This was a very basic course that taught how to get sound in and out of the DAW ( Digital Audio Workstation )through the Sound system.
-To pass the exam ( and get access to the sweet sweet audio studio ) you need to pass 3 modules.
 
-1. Get the Digital audio system configured for the task at hand
-2. Get sound from a microphone into the DAW and add an insert or a send to the sound
-3. Tie the wire properly.
+### Imitation
 
-### Configuring the Digital audio system
+The author introduces the idea of imitation and how humans are naturally more imitative than our ancestors - the apes. Children as young as 4 hours can learn how to put out their tongue if you teach them. This level of imitation could be the basis of how we think about society, values and empathy. Children also won't imitate inanimate objects programmed to do so or if performed by a robotic arm for instance. This has interesting implications for robotic nannies. 
 
-Getting sound from the physical hardware to the computer is quite challenging and a lot of engineering is involved, especially in a studio where there are lots of parts like a MIDI input, amplifier and a mic that need to work in tandem. The software that does this is called Dante, or a digital controller, which basically is a virtual orchestration of the physical parts. The most important part is to make sure this is working. Usually the studio you are operating in has presets saved for the setup and these presets can be loaded in. We have to make sure the bit rate is right ( usually 44.1 Khz ). Once the preset is loaded and the bitrate is verified, congratulations, you have passed 1/3 rd of the test.
+Overimitation is when to seek approval, someone imitates seemingly irrelevent actions that have no impact on a task at hand. This overimitation was more common in humans than in chimpanzees, which does not make sense. How can humans do a poorer job of what is relevant and irrelevant [https://web.archive.org/web/20250221210256/https://www.nytimes.com/2005/12/13/science/children-learn-by-monkey-see-monkey-do-chimps-dont.html] The behaviour became surprisingly worse in older kids! The surprising part was the children knew certain actions did nothing and still did it. It seems like the mind leaned towards mindless blank copying rather than having to think.
 
-### Getting sound from a Mic
+Seemingly this is a surprising outcome. Why would humans imitate useless steps? is it just to imitate? No, the answer is that the human brain is much more sophisticated than that. Humans are aware that the person that is doing the useless action, is also equally smart. And they would have optimized their actions to only be the best. So even though it seems like there is no utility to some actions, the young humans still imitiate and do the same action. This enables us humans to learn from other's experiences much much faster! It's an efficency mechanism built into our brains as a species.
 
-If you have tried connecting a device to any sort of system to get it working, be it the 2000's nintendo consoles or transfering data from digital camera, you'll know how hard it is to get each part working smoothly and getting output is a pain. This part of the test is supposed to test your problem solving skills. The Goal is to get the microphone output into the DAW and add an insert or a send to the original audio.
+This was a epiphanic moment for me in the book. This idea led to the idea of training agents to act based on role models.
 
-To get sound from a mic, You first connect the mic to one of the input channels through the microphone wire. This input will now enter something called the patchbay. This is a bunch of wire sockets that connects to each part of the physical system. The next thing to do is connect the mic output to an amplifier. The amplifier picks up the signals from the mic and basically amplifies it. Here Gain is how sensitive the amplifier is to the mic audio and sound is just the volume level it outputs. This output is then taken to whichever effect you want to add. These effects can range from delay to orchestral reverb. There are a lot of choices here, but once this is given, you take the output from this and send it back to the input channel that goes to the computer.
+But there is a fundamental problem with this. Training a model to learn how to steer a wheel in mario kart while it captures images about the road sounds like a good plan. There is a fundamental flaw in this idea. The amateur model, is learning from a professional driver. Whenever it makes even the slightest of mistake, the error cascades on itself, making it go and fall off the course.
 
-Once this is done, within your DAW, you have to select that particular audio channel and voila, you have the sound added with the effect on top. You successfully did an insert.
+There are two solutions to this:
 
-To do a send, you can digitally add a send by getting the raw input into the DAW and then use a channel splitter, that essentially duplicates the signal. This duplicated signal can then be passed on in the same way to a send to get the effect added. once this is done, the amount of effect added can be controlled by adjusting how much of each signal gets passed. The processed signal with the effect is called the "wet" signal and the raw signal is called the "dry" signal.
+- One is to have the joystick in hand, when the model is playing and tweaking it as if you would play.
+- The other idea is to let the model and the player have a hand on the joystick at the same time. Once the model feels like it's in a strange situation, it hands over control to the player, and the player controls the cart away from the dangerous situation. ( an interesting quote from the author here "The network keeps improving at doing what you would have done. There are periods where you're not sure whether you're driving or not." )
 
-Insert - An insert is basically a direct addition of an effect onto your original track
-Send - A send is two parts. You duplicate the original audio and then apply the effect on the duplicated track
+The next part of the book takes a very interesting turn.
 
-| Insert | Send |
-|--------|------|
-| You can't control how much of the effect gets applied after application | The effect can be controlled by controlling how much of the entire channel gets added |
-| Is equivalent to a filter on a signal | It is like a feed forward loop with a separate filter on the loop |
+#### Possibilism vs Actualism
 
-Congratulations! you are now 2/3rds of the way there.
+'''
+What would you do if you were me? she said.
+If I were you-you, or if I were you-me?
+If you were me-me.
 
-### Tying the wires
+If I were you-you, he said, I'd do exactly what you're doing.
 
-In the final part you are taught how to tie a wire chord. This could be the easiest part or the hardest depending on your mindset. But essentially, the best way to tie a chord so that it doesn't get tangled is to use something called an over / under method. In this method you extend your non dominant hand and with your other hand start going over the other hand. Next you twist the chord slightly so that you have a chord that's twisting and you have to go the other way under your hand. It sounds complicated on text but is fairly straightforward. What this enables is that the wire is now tied in such a way that the chard automatically untangles itself without getting caught in other parts of the chord.
+- Robert Hass
+'''
 
-[Link to a good tutorial on youtube](https://www.youtube.com/watch?v=NYb2n6_UPEQ)
+Sometimes, if you are an amateur, imitating the moves of a master is a grave idea. This is such a paradoxical idea. But you can think of it as, you have'nt explored more of the actual space to know how or why an action is good and is taken by an expert. Unless you can do exactly what the expert did ( and every single possibility in the universe that the expert would have done ), there is no way to do everything the expert does and get good results.
 
-Once you are done with this, Congratulations! You essentially gain access to the studio facility and record in peace. I got interested in the sound engineering and digital audio world because of my video game music course I took and am now a very avid music enthusiast. Go have fun with this! It's very exciting and equally challenging.
+This comes down to a philosophical talk on, which option to choose? Given a chance to choose the lower vs the higher virtue action, one should always choose the lower virtuous action if it results in a better outcome than the worst outcome with the higher valued outcome. For example, there is no point in even presenting an act that puts the agent ina position to do great things if the same act also puts the agent in a position to do something disastrous, and the agent would choose the latter rather than the former". This touches more about the emotional aspect of all of these agents. As humans, we sometimes don't do the cutthroat logical evaluation of a situation. Instead of taking the pragmatic yet rude action, that will result in a better outcome for both parties, for example when asked to review a resume, when you have a biological review article - If you say yes to the resume, you might just procrastinate and not do it, while if you say no, the person might get it revied from a different person who is not as qualified as you are, but still there is atleast a review. So saying no is better for the both of you. Same with saying yes to parties and everything else in life.
+
+This translates to the discussion on "Effective Altruism". You basically donate all your money to the maximal benefit of others. Interesting. The direct application of this in machine learning is in agentic Q-learning methods. These methods can be split into on-policy and off-policy methods. On-policy methods work on the would be outcomes. But the off-policy agent, tries to take the action that always maximizes the reward, the could be outcomes. But this can quickly lead to trouble as the model would take a move that it cannot handle.

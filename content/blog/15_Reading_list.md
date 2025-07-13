@@ -15,3 +15,8 @@ But nowadays reading time is getting scarce and there are so many good books it 
 - 2001 space odessy - https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)
 - siddhartha - https://en.wikipedia.org/wiki/Siddhartha_(novel)
 - Thank you for being late - https://en.wikipedia.org/wiki/Thank_You_for_Being_Late
+- Advice for the young investigator - Cajal
+- The man who changed everything
+
+- Numerical geometry of non rigid objects
+- Methods of Information geometry
