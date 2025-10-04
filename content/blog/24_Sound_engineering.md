@@ -1,6 +1,6 @@
 ---
 title : The Alignment Problem
-date : 2025-04-3T22:19:32-05:00
+date : 2025-04-03T22:19:32-05:00
 draft : false
 tags:
 - Music
