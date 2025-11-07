@@ -1,7 +1,7 @@
 ---
 title : Feels
 date : 2025-07-26T01:19:15-05:00
-draft : false
+draft : true
 tags:
 - The Human Experience
 - Physical Feelings
