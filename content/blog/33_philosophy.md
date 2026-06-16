@@ -8,7 +8,7 @@ tags:
 - Rant?
 ---
 
-Preface: This post contains my thoughts on topics that have already been widely debated and potentially well established. I might strike a nerve or come off as extremely opinionated and unread in this topic. But that is the whole point of this post, I don't believe in certain generalized arguments and ideas posted by others about philosophy. This is extremely biosed towards my own experiences and if you think this might enrage you and you would not like your philisophy questioned please close this post or read one of my other blogs.
+Preface: This post contains my thoughts on topics that have already been widely debated and potentially well established. I might strike a nerve or come off as extremely opinionated and unread in this topic. But that is the whole point of this post, I don't believe in certain generalized arguments and ideas posted by others about philosophy. This is extremely biased towards my own experiences and if you think this might enrage you and you would not like your philisophy questioned please close this post or read one of my other blogs.
 
 Philosophy has been well established for thousands of years! Many people, much more capable and qualified than me have put in their entire lives to thinking about philosophy. On the contrary, I have never read a book on philosophy, never listened to more than a few snippets from famous philosophers and a few quotes from those same philosophers. Why do I get to comment on philosophy? Well, let's start with defining Philosophy* very broadly.
 
