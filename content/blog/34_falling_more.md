@@ -44,4 +44,11 @@ Till winter bares her teeth, bitter and sour.
 Oh Fall, will you be mine, forevermore.
 ```
 
+
+![Leaves](/blog/images/Leaves.jpg)
+![My Fall](/blog/images/me_fall.jpg)
+![Fall](/blog/images/fall_rays.jpg)
+
+
+P.S. P.S.
 Above is an ode I wrote to Fall. ( Hey, I never said I was a good poet. Maybe I should just stick to writing papers ). Onwards, to more blogs and more falls.
